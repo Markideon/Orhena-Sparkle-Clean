@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Star, CheckCircle, Calendar, Clock, Users } from 'lucide-react';
+import { Phone, Mail, Star, CheckCircle, Calendar, Clock, Users } from 'lucide-react';
 
 const App = () => {
   const [activePage, setActivePage] = useState('home');
