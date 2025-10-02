@@ -9,13 +9,13 @@ const App = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-[#964B00]">Orhena</div>
+            <div className="text-2xl font-bold text-brown">Orhena</div>
           </div>
           <div className="hidden md:flex space-x-8">
             <button 
               onClick={() => setActivePage('home')}
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                activePage === 'home' ? 'text-[#964B00] bg-[#4682B4]/10' : 'text-gray-700 hover:text-[#964B00]'
+                activePage === 'home' ? 'text-brown bg-onion-blue/10' : 'text-gray-700 hover:text-brown'
               }`}
             >
               Home
@@ -23,7 +23,7 @@ const App = () => {
             <button 
               onClick={() => setActivePage('services')}
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                activePage === 'services' ? 'text-[#964B00] bg-[#4682B4]/10' : 'text-gray-700 hover:text-[#964B00]'
+                activePage === 'services' ? 'text-brown bg-onion-blue/10' : 'text-gray-700 hover:text-brown'
               }`}
             >
               Services
@@ -31,7 +31,7 @@ const App = () => {
             <button 
               onClick={() => setActivePage('about')}
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                activePage === 'about' ? 'text-[#964B00] bg-[#4682B4]/10' : 'text-gray-700 hover:text-[#964B00]'
+                activePage === 'about' ? 'text-brown bg-onion-blue/10' : 'text-gray-700 hover:text-brown'
               }`}
             >
               About Us
@@ -39,7 +39,7 @@ const App = () => {
             <button 
               onClick={() => setActivePage('contact')}
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                activePage === 'contact' ? 'text-[#964B00] bg-[#4682B4]/10' : 'text-gray-700 hover:text-[#964B00]'
+                activePage === 'contact' ? 'text-brown bg-onion-blue/10' : 'text-gray-700 hover:text-brown'
               }`}
             >
               Contact
@@ -56,7 +56,7 @@ const App = () => {
   );
 
   const HeroSection = () => (
-    <div className="relative bg-gradient-to-r from-[#964B00] to-[#4682B4] text-white">
+    <div className="relative bg-gradient-to-r from-brown to-onion-blue text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -67,7 +67,7 @@ const App = () => {
           </p>
           <button 
             onClick={() => setActivePage('contact')}
-            className="bg-white text-[#964B00] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#f8f9fa] transition-colors shadow-lg hover:shadow-xl"
+            className="bg-white text-brown px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#f8f9fa] transition-colors shadow-lg hover:shadow-xl"
           >
             Book Your Cleaning Service Today!
           </button>
@@ -95,7 +95,7 @@ const App = () => {
               <div className="space-y-4">
                 {['Residential Cleaning', 'Commercial Cleaning', 'Specialized Cleaning', 'Industrial Cleaning', 'Warehouse Cleaning'].map((service, index) => (
                   <div key={index} className="flex items-center">
-                    <CheckCircle className="text-[#4682B4] mr-3 flex-shrink-0" size={20} />
+                    <CheckCircle className="text-onion-blue mr-3 flex-shrink-0" size={20} />
                     <span className="text-gray-700 font-medium">{service}</span>
                   </div>
                 ))}
@@ -105,11 +105,11 @@ const App = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <Phone className="text-[#964B00] mr-3" size={20} />
+                  <Phone className="text-brown mr-3" size={20} />
                   <span className="text-gray-700">+2348118211041</span>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="text-[#964B00] mr-3" size={20} />
+                  <Mail className="text-brown mr-3" size={20} />
                   <span className="text-gray-700">orhenaentreprise@gmail.com</span>
                 </div>
               </div>
@@ -156,7 +156,7 @@ const App = () => {
         <div className="space-y-16">
           {/* Residential Cleaning */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-[#964B00] text-white p-8">
+            <div className="bg-brown text-white p-8">
               <h2 className="text-3xl font-bold">Residential Cleaning</h2>
             </div>
             <div className="p-8">
@@ -168,15 +168,15 @@ const App = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Services Include:</h3>
                   <ul className="space-y-2">
                     <li className="flex items-center">
-                      <CheckCircle className="text-[#4682B4] mr-2" size={16} />
+                      <CheckCircle className="text-onion-blue mr-2" size={16} />
                       One-time cleaning
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="text-[#4682B4] mr-2" size={16} />
+                      <CheckCircle className="text-onion-blue mr-2" size={16} />
                       Regular cleaning
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="text-[#4682B4] mr-2" size={16} />
+                      <CheckCircle className="text-onion-blue mr-2" size={16} />
                       Deep cleaning
                     </li>
                   </ul>
@@ -185,15 +185,15 @@ const App = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Benefits:</h3>
                   <ul className="space-y-2">
                     <li className="flex items-center">
-                      <CheckCircle className="text-[#4682B4] mr-2" size={16} />
+                      <CheckCircle className="text-onion-blue mr-2" size={16} />
                       Healthier living environment
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="text-[#4682B4] mr-2" size={16} />
+                      <CheckCircle className="text-onion-blue mr-2" size={16} />
                       More free time for family
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="text-[#4682B4] mr-2" size={16} />
+                      <CheckCircle className="text-onion-blue mr-2" size={16} />
                       Professional results
                     </li>
                   </ul>
@@ -204,7 +204,7 @@ const App = () => {
 
           {/* Commercial Cleaning */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-[#4682B4] text-white p-8">
+            <div className="bg-onion-blue text-white p-8">
               <h2 className="text-3xl font-bold">Commercial Cleaning</h2>
             </div>
             <div className="p-8">
@@ -216,15 +216,15 @@ const App = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Services Include:</h3>
                   <ul className="space-y-2">
                     <li className="flex items-center">
-                      <CheckCircle className="text-[#964B00] mr-2" size={16} />
+                      <CheckCircle className="text-brown mr-2" size={16} />
                       Office cleaning
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="text-[#964B00] mr-2" size={16} />
+                      <CheckCircle className="text-brown mr-2" size={16} />
                       Retail cleaning
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="text-[#964B00] mr-2" size={16} />
+                      <CheckCircle className="text-brown mr-2" size={16} />
                       Restaurant cleaning
                     </li>
                   </ul>
@@ -233,15 +233,15 @@ const App = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Benefits:</h3>
                   <ul className="space-y-2">
                     <li className="flex items-center">
-                      <CheckCircle className="text-[#964B00] mr-2" size={16} />
+                      <CheckCircle className="text-brown mr-2" size={16} />
                       Improved workplace productivity
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="text-[#964B00] mr-2" size={16} />
+                      <CheckCircle className="text-brown mr-2" size={16} />
                       Better customer impression
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="text-[#964B00] mr-2" size={16} />
+                      <CheckCircle className="text-brown mr-2" size={16} />
                       Healthier work environment
                     </li>
                   </ul>
@@ -252,7 +252,7 @@ const App = () => {
 
           {/* Specialized Cleaning */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-gradient-to-r from-[#964B00] to-[#4682B4] text-white p-8">
+            <div className="bg-gradient-to-r from-brown to-onion-blue text-white p-8">
               <h2 className="text-3xl font-bold">Specialized Cleaning</h2>
             </div>
             <div className="p-8">
@@ -264,15 +264,15 @@ const App = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Services Include:</h3>
                   <ul className="space-y-2">
                     <li className="flex items-center">
-                      <CheckCircle className="text-white bg-[#964B00] rounded-full p-1 mr-2" size={16} />
+                      <CheckCircle className="text-white bg-brown rounded-full p-1 mr-2" size={16} />
                       Carpet cleaning
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="text-white bg-[#964B00] rounded-full p-1 mr-2" size={16} />
+                      <CheckCircle className="text-white bg-brown rounded-full p-1 mr-2" size={16} />
                       Upholstery cleaning
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="text-white bg-[#964B00] rounded-full p-1 mr-2" size={16} />
+                      <CheckCircle className="text-white bg-brown rounded-full p-1 mr-2" size={16} />
                       Post-construction cleaning
                     </li>
                   </ul>
@@ -281,15 +281,15 @@ const App = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Benefits:</h3>
                   <ul className="space-y-2">
                     <li className="flex items-center">
-                      <CheckCircle className="text-white bg-[#4682B4] rounded-full p-1 mr-2" size={16} />
+                      <CheckCircle className="text-white bg-onion-blue rounded-full p-1 mr-2" size={16} />
                       Extended furniture life
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="text-white bg-[#4682B4] rounded-full p-1 mr-2" size={16} />
+                      <CheckCircle className="text-white bg-onion-blue rounded-full p-1 mr-2" size={16} />
                       Allergen removal
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="text-white bg-[#4682B4] rounded-full p-1 mr-2" size={16} />
+                      <CheckCircle className="text-white bg-onion-blue rounded-full p-1 mr-2" size={16} />
                       Professional restoration
                     </li>
                   </ul>
@@ -316,7 +316,7 @@ const App = () => {
               At Orhena Sparkle Clean, our mission is to provide exceptional cleaning services that exceed our clients' expectations. We strive to build long-term relationships with our clients and provide a clean and healthy environment for everyone.
             </p>
           </div>
-          <div className="bg-gradient-to-br from-[#964B00] to-[#4682B4] rounded-lg p-8 text-white">
+          <div className="bg-gradient-to-br from-brown to-onion-blue rounded-lg p-8 text-white">
             <div className="flex items-center mb-4">
               <Users className="mr-3" size={32} />
               <h3 className="text-2xl font-bold">Our Values</h3>
@@ -368,7 +368,6 @@ const App = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="bg-white rounded-lg shadow-lg p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
-            {/* Updated form with Formspree */}
             <form action="https://formspree.io/f/myznjnjl" method="POST" className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Name</label>
@@ -377,7 +376,7 @@ const App = () => {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#964B00] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brown focus:border-transparent"
                 />
               </div>
               <div>
@@ -387,7 +386,7 @@ const App = () => {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#964B00] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brown focus:border-transparent"
                 />
               </div>
               <div>
@@ -397,7 +396,7 @@ const App = () => {
                   id="phone"
                   name="phone"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#964B00] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brown focus:border-transparent"
                 />
               </div>
               <div>
@@ -407,12 +406,12 @@ const App = () => {
                   name="message"
                   required
                   rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#964B00] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brown focus:border-transparent"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full bg-[#964B00] text-white py-3 rounded-lg font-semibold hover:bg-[#7a3d00] transition-colors"
+                className="w-full bg-brown text-white py-3 rounded-lg font-semibold hover:bg-[#7a3d00] transition-colors"
               >
                 Send Message
               </button>
@@ -424,28 +423,28 @@ const App = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <Phone className="text-[#964B00] mr-4" size={24} />
+                  <Phone className="text-brown mr-4" size={24} />
                   <div>
                     <p className="font-semibold text-gray-900">Phone</p>
                     <p className="text-gray-600">+2348118211041</p>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="text-[#964B00] mr-4" size={24} />
+                  <Mail className="text-brown mr-4" size={24} />
                   <div>
                     <p className="font-semibold text-gray-900">Email</p>
                     <p className="text-gray-600">orhenaentreprise@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Calendar className="text-[#964B00] mr-4" size={24} />
+                  <Calendar className="text-brown mr-4" size={24} />
                   <div>
                     <p className="font-semibold text-gray-900">Working Hours</p>
                     <p className="text-gray-600">Monday - Saturday: 8AM - 6PM</p>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Clock className="text-[#964B00] mr-4" size={24} />
+                  <Clock className="text-brown mr-4" size={24} />
                   <div>
                     <p className="font-semibold text-gray-900">Emergency Service</p>
                     <p className="text-gray-600">Available 24/7</p>
@@ -454,12 +453,12 @@ const App = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-[#964B00] to-[#4682B4] rounded-lg p-8 text-white">
+            <div className="bg-gradient-to-r from-brown to-onion-blue rounded-lg p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">Ready to Book?</h3>
               <p className="mb-6">Contact us now to schedule your cleaning service and experience the Orhena difference!</p>
               <button 
                 onClick={() => setActivePage('home')}
-                className="bg-white text-[#964B00] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                className="bg-white text-brown px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 Book Now
               </button>
@@ -494,7 +493,7 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <div className="text-2xl font-bold text-[#964B00] mb-4">Orhena Sparkle Clean</div>
+              <div className="text-2xl font-bold text-brown mb-4">Orhena Sparkle Clean</div>
               <p className="text-gray-300 mb-4">
                 Providing exceptional cleaning services that exceed expectations. Quality, reliability, and customer satisfaction are our top priorities.
               </p>
